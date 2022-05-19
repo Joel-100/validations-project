@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>Form</title>
+</head>
+
+<body>
+    <div>
+        <form name="registration" action="" onsubmit='return Validate()'>
+            <div class="p-5 justify-center align-center">
+                <div class="col-4 mb-4">
+                    <label for="firstName">First Name</label>
+                    <!-- input field for firstname-->
+                    <input type="text" class="form-control" id="firstName" name="fname" placeholder="First Name">
+                    <!-- Error that is going to be displayed -->
+                    <div class="text-danger font-weight-bold small" id="fName"></div>
+                </div>
+
+                <div class="col-4 mb-4">
+                    <label for="lastName">Last Name</label>
+                    <!-- input field for lastname -->
+                    <input type="text" class="form-control" id="lastName" name="lname" placeholder="Last Name">
+                    <!-- Error that is going to be displayed -->
+                    <div class="text-danger font-weight-bold small" id="lName"></div>
+                </div>
+
+                <div class="col-4 mb-4">
+                    <label for="age">Age</label>
+                    <!-- input field for lastname -->
+                    <input type="text" class="form-control" id="age" name="age" placeholder="Age">
+                    <!-- Error that is going to be displayed -->
+                    <div class="text-danger font-weight-bold small" id="age"></div>               
+                 </div>
+
+                <div class="col-4 mb-4">
+                    <label for="phoneNumber">Phone Number</label>
+                    <!-- input field for lastname -->
+                    <input type="text" class="form-control" id="phoneNumber" name="pNumber" placeholder="Phone Number">
+                    <!-- Error that is going to be displayed -->
+                    <div class="text-danger font-weight-bold small" id="pNumber"></div>                         
+                </div>
+
+                <div class="col-4 mb-4">
+                    <button type="submit" value="submit" class="btn btn-primary mb-3">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+<script src="./form.js"></script>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+</html>
